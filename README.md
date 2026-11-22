@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BrainMed
 
 O BrainMed possui uma interface estática em `index.html` e uma API Node.js/PostgreSQL para integração real com WhatsApp, Instagram, usuários da equipe, conversas, transferências humanas e agendamentos.
@@ -72,3 +73,7 @@ Observações:
 - `POST /api/appointments`
 - `PATCH /api/appointments/:id`
 - `GET/PUT /api/settings`
+=======
+# clinnor
+Plataforma SaaS para clínicas de estética e saúde
+>>>>>>> 51d9b4c7394d48d537f189fd635772bc7240ccf2
