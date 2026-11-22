@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 100" fill="none">
+  <title>CLINNOR — assinatura compacta para sidebar</title>
+  <defs>
+    <linearGradient id="clinnor-blue" x1="8" y1="85" x2="92" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4ED8"/>
+      <stop offset=".58" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0EA5FF"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 0) scale(.625)">
+    <path d="M116 40.5A53 53 0 1 0 116 119.5" stroke="url(#clinnor-blue)" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="132" cy="68" r="15" fill="url(#clinnor-blue)"/>
+  </g>
+  <text x="108" y="64" fill="#172554" font-family="Manrope, 'Plus Jakarta Sans', Arial, sans-serif" font-size="39" font-weight="750" letter-spacing="3">CLINNOR</text>
+</svg>

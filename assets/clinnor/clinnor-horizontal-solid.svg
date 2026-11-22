@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 100" fill="none">
+  <title>CLINNOR — assinatura azul sem degradê</title>
+  <g transform="translate(0 0) scale(.625)">
+    <path d="M116 40.5A53 53 0 1 0 116 119.5" stroke="#2563EB" stroke-width="28" stroke-linecap="round"/>
+    <circle cx="132" cy="68" r="15" fill="#2563EB"/>
+  </g>
+  <text x="112" y="65" fill="#172554" font-family="Manrope, 'Plus Jakarta Sans', Arial, sans-serif" font-size="43" font-weight="750" letter-spacing="4">CLINNOR</text>
+</svg>

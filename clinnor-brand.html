@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Identidade CLINNOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#f8fafc;color:#172554;font-family:Manrope,Arial,sans-serif}
+    main{width:min(1120px,calc(100% - 40px));margin:48px auto 72px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+    header img{width:230px;height:auto}
+    h1{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:0}
+    h2{font-size:18px;margin:0 0 18px}
+    p{color:#64748b;line-height:1.6}
+    .section{margin-top:22px;padding:24px;background:#fff;border:1px solid #e2e8f0;border-radius:16px;box-shadow:0 4px 18px #17255408}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .tile{min-height:160px;padding:20px;display:grid;place-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}
+    .tile img{display:block;width:min(100%,250px);height:84px;object-fit:contain}
+    .tile .symbol{width:92px;height:92px}
+    .tile.dark{background:#172554}
+    .tile.solid{background:#fff}
+    .tile.app img{width:104px;height:104px}
+    .caption{margin-top:12px;color:#64748b;font-size:12px;text-align:center}
+    .mock-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .mock{min-height:240px;padding:24px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+    .mock-login{display:grid;place-items:center;background:#f8fafc}
+    .login-card{width:min(300px,100%);padding:24px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 12px 32px #17255412}
+    .login-card img{width:180px;height:48px;object-fit:contain;object-position:left}
+    .login-card strong{display:block;margin:18px 0 5px}
+    .login-card button{width:100%;margin-top:15px;padding:10px;border:0;border-radius:8px;background:#2563eb;color:#fff;font:700 13px Manrope}
+    .mock-sidebar{max-width:300px;padding:20px 14px}
+    .mock-sidebar img{width:190px;height:48px;object-fit:contain;object-position:left;margin-bottom:22px}
+    .nav{padding:10px 12px;border-radius:8px;color:#64748b;font-size:13px}
+    .nav.active{position:relative;background:#eff6ff;color:#1d4ed8;font-weight:700}
+    .nav.active:before{content:"";position:absolute;left:-14px;top:7px;bottom:7px;width:3px;border-radius:0 3px 3px 0;background:#2563eb}
+    .mini-icon{width:16px;height:16px;vertical-align:middle;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .mock-header{display:flex;align-items:center;gap:14px}
+    .mock-header img{width:34px;height:34px}
+    .mock-header span{font-size:14px;font-weight:700}
+    .institutional{display:flex;align-items:center;gap:20px;padding:28px;border-radius:12px;background:linear-gradient(135deg,#fff,#eff6ff)}
+    .institutional img{width:70px;height:70px}
+    .institutional strong{font-size:20px;letter-spacing:.08em}
+    .institutional span{display:block;margin-top:5px;color:#64748b;font-size:13px}
+    .swatches{display:flex;flex-wrap:wrap;gap:10px}
+    .swatch{flex:1 1 130px;padding:13px;border:1px solid #e2e8f0;border-radius:10px;color:#172554;font-size:12px}
+    .swatch i{display:block;height:35px;margin-bottom:9px;border-radius:6px}
+    .note{font-size:12px;color:#64748b}
+    .institutional-tile{grid-column:span 2}
+    @media(max-width:720px){main{margin:24px auto 48px}.grid{grid-template-columns:1fr 1fr}.mock-grid{grid-template-columns:1fr}.section{padding:18px}header img{width:165px}}
+    @media(max-width:420px){.grid{grid-template-columns:1fr}.institutional-tile{grid-column:span 1}}
+  </style>
+</head>
+<body>
+<main>
+  <header><div><p>IDENTIDADE VISUAL</p><h1>CLINNOR</h1></div><img src="./assets/clinnor/clinnor-horizontal.svg" alt="CLINNOR"></header>
+  <section class="section">
+    <h2>Assinaturas oficiais</h2>
+    <div class="grid">
+      <div><div class="tile"><img src="./assets/clinnor/clinnor-horizontal.svg" alt="Logo horizontal CLINNOR"></div><div class="caption">Logo horizontal</div></div>
+      <div><div class="tile"><img class="symbol" src="./assets/clinnor/clinnor-symbol.svg" alt="Símbolo CLINNOR"></div><div class="caption">Símbolo isolado</div></div>
+      <div><div class="tile dark"><img class="symbol" src="./assets/clinnor/clinnor-white.svg" alt="Símbolo branco CLINNOR"></div><div class="caption">Versão branca</div></div>
+      <div><div class="tile"><img class="symbol" src="./assets/clinnor/clinnor-monochrome.svg" alt="Símbolo monocromático CLINNOR"></div><div class="caption">Monocromática</div></div>
+      <div><div class="tile solid"><img class="symbol" src="./assets/clinnor/clinnor-solid.svg" alt="Símbolo azul sólido CLINNOR"></div><div class="caption">Azul sem degradê</div></div>
+      <div><div class="tile"><img src="./assets/clinnor/clinnor-compact.svg" alt="Logo compacto CLINNOR"></div><div class="caption">Assinatura compacta</div></div>
+      <div><div class="tile dark"><img src="./assets/clinnor/clinnor-horizontal-white.svg" alt="Logo horizontal CLINNOR branco"></div><div class="caption">Assinatura branca</div></div>
+      <div><div class="tile"><img src="./assets/clinnor/clinnor-horizontal-monochrome.svg" alt="Logo horizontal CLINNOR monocromático"></div><div class="caption">Assinatura monocromática</div></div>
+      <div><div class="tile"><img src="./assets/clinnor/clinnor-horizontal-solid.svg" alt="Logo horizontal CLINNOR azul sólido"></div><div class="caption">Assinatura sem degradê</div></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Aplicações digitais</h2>
+    <div class="grid">
+      <div><div class="tile app"><img src="./assets/clinnor/clinnor-app-icon.svg" alt="Ícone de aplicativo CLINNOR"></div><div class="caption">Ícone de aplicativo</div></div>
+      <div class="tile mock-login"><div class="login-card"><img src="./assets/clinnor/clinnor-horizontal.svg" alt="CLINNOR"><strong>Acesse sua clínica</strong><p>Gestão simples, segura e conectada.</p><button>Entrar na plataforma</button></div></div>
+      <div class="tile mock-sidebar"><img src="./assets/clinnor/clinnor-compact.svg" alt="CLINNOR"><div class="nav active"><svg class="mini-icon" viewBox="0 0 24 24"><path d="M3 13a9 9 0 1 1 18 0"/><path d="m12 13 4-4"/></svg> &nbsp; Dashboard</div><div class="nav"><svg class="mini-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg> &nbsp; Agendamentos</div><div class="nav"><svg class="mini-icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg> &nbsp; Pacientes</div></div>
+      <div class="tile"><div style="width:100%"><div class="mock-header"><img src="./assets/clinnor/clinnor-symbol.svg" alt=""><span>Dashboard</span></div><p style="margin-top:28px">Cabeçalho do sistema</p></div></div>
+      <div class="tile institutional-tile"><div class="institutional"><img src="./assets/clinnor/clinnor-symbol.svg" alt=""><div><strong>CLINNOR</strong><span>Tecnologia clínica integrada</span></div></div></div>
+    </div>
+    <p class="note">A aplicação de login acima é uma composição de apresentação da identidade; o sistema atual não possui uma tela de login no frontend estático.</p>
+  </section>
+  <section class="section">
+    <h2>Paleta da marca</h2>
+    <div class="swatches">
+      <div class="swatch"><i style="background:#2563eb"></i>Azul royal · #2563EB</div>
+      <div class="swatch"><i style="background:#0ea5ff"></i>Azul elétrico · #0EA5FF</div>
+      <div class="swatch"><i style="background:#1d4ed8"></i>Azul profundo · #1D4ED8</div>
+      <div class="swatch"><i style="background:#172554"></i>Azul-marinho · #172554</div>
+      <div class="swatch"><i style="background:#fff"></i>Branco · #FFFFFF</div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
