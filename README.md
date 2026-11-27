@@ -73,7 +73,7 @@ Observações:
 - `POST /api/appointments`
 - `PATCH /api/appointments/:id`
 - `GET/PUT /api/settings`
-=======
-# clinnor
-Plataforma SaaS para clínicas de estética e saúde
->>>>>>> 51d9b4c7394d48d537f189fd635772bc7240ccf2
+
+# Clinnor
+
+Plataforma SaaS para clínicas de estética e saúde.

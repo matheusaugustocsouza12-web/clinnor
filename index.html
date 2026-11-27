@@ -467,7 +467,155 @@ input::placeholder,textarea::placeholder,.sb input::placeholder{color:#94A3B8;}
 </style>
 </head>
 <body>
-<aside class="sidebar">
+
+<style>
+  #brainmed-login {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #f5f7fb;
+    font-family: Inter, Arial, sans-serif;
+  }
+
+  .clinnor-login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 42px 36px;
+    background: #fff;
+    border: 1px solid #e7ebf2;
+    border-radius: 18px;
+    box-shadow: 0 18px 55px rgba(20, 40, 80, .08);
+  }
+
+  .clinnor-login-logo {
+    display: block;
+    width: 155px;
+    max-height: 65px;
+    object-fit: contain;
+    margin: 0 auto 32px;
+  }
+
+  .clinnor-login-card h1 {
+    margin: 0 0 8px;
+    color: #17243b;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .clinnor-login-subtitle {
+    margin: 0 0 30px;
+    color: #778399;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .clinnor-login-card label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #344158;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .clinnor-login-card input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce2ec;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .clinnor-login-card input:focus {
+    border-color: #3975c6;
+  }
+
+  .clinnor-login-button {
+    width: 100%;
+    margin-top: 26px;
+    padding: 15px;
+    border: 0;
+    border-radius: 9px;
+    background: #245da8;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .clinnor-login-button:disabled {
+    opacity: .6;
+    cursor: wait;
+  }
+
+  .brainmed-login-error {
+    margin-top: 14px;
+    color: #c03939;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .clinnor-login-footer {
+    margin-top: 28px;
+    color: #9aa4b4;
+    font-size: 11px;
+    text-align: center;
+  }
+</style>
+
+<div id="brainmed-login">
+  <div class="clinnor-login-card">
+    <img
+      class="clinnor-login-logo"
+      src="./assets/clinnor/clinnor-compact.svg"
+      alt="Clinnor"
+    >
+
+    <h1>Bem-vindo à Clinnor</h1>
+    <p class="clinnor-login-subtitle">
+      Entre com seus dados para acessar sua clínica.
+    </p>
+
+    <form id="brainmed-login-form">
+      <label for="clinnor-email">E-mail</label>
+      <input
+        id="clinnor-email"
+        type="email"
+        name="email"
+        placeholder="seu@email.com"
+        autocomplete="username"
+        required
+      >
+
+      <label for="clinnor-password">Senha</label>
+      <input
+        id="clinnor-password"
+        type="password"
+        name="password"
+        placeholder="Digite sua senha"
+        autocomplete="current-password"
+        required
+      >
+
+      <button class="clinnor-login-button" type="submit">
+        Entrar na plataforma
+      </button>
+
+      <div class="brainmed-login-error" role="alert"></div>
+    </form>
+
+    <div class="clinnor-login-footer">
+      CLINNOR · Plataforma de gestão para clínicas
+    </div>
+  </div>
+</div>
+
+  <aside class="sidebar">
   <div class="logo-wrap"><img src="./assets/clinnor/clinnor-compact.svg" alt="CLINNOR"></div>
   <div class="ng">Principal</div>
   <div class="ni active" onclick="nav('dashboard',this)"><svg class="ic" aria-hidden="true" viewBox="0 0 24 24"><path d="M3 13a9 9 0 1 1 18 0"/><path d="M12 13l4-4"/><path d="M7 17h.01M12 17h.01M17 17h.01"/></svg>Dashboard</div>
@@ -2068,6 +2216,7 @@ function exportQuotePdf(){
     markImage.style.cssText='width:100%;height:100%;object-fit:contain';
     quoteMark.appendChild(markImage);
   }
+
   const quoteFooter=printWindow.document.querySelector('.footer');
   if(quoteFooter)quoteFooter.innerHTML=quoteFooter.innerHTML.replace('BrainMed','CLINNOR');
   const quoteTopbar=printWindow.document.querySelector('.topbar');

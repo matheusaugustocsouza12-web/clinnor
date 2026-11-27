@@ -386,7 +386,7 @@ app.post('/webhooks/meta', verifySignature, async (req, res, next) => {
 });
 
 app.use((error, _req, res, _next) => {
-  console.error(error);
+  console.error('Erro interno:', error);
   res.status(500).json({ error: 'Erro interno do servidor.' });
 });
 
